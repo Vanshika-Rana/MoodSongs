@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Playlists for Your Moods</title>
+</head>
+<body>
+    <video autoplay muted loop id="bg">
+        <source src="./bg.mp4" type="video/mp4">
+      </video>
+      <div class="container">
+          <h1>Playlists for Your Moods</h1>
+          <p><i>"Where words leave off, Music begins." - HEINRICH HEINE</i></p>
+          <label for="mood">What's your mood today?</label>  
+          <select name="moods" id="moods">
+                <option value="soulful">Self Care & Soulful</option>
+                <option value="booster">Just something to JAM</option>
+                <option value="chill">Chilled and Relaxed</option>
+                <option value="chore">Need to do Chores</option>
+                <option value="workout">Energy 101</option>
+              </select>
+              <div class="buttonGroup">
+                <button id="b1" onclick="setMood()">Set Your Mood</button>
+                <button id="b2" onclick="getMood()">Get Your Playlist</button>
+              </div>
+                
+                    <p id="link"></p>
+
+                
+        </div>
+
+
+        <script charset="utf-8"
+        src="https://cdn.ethers.io/scripts/ethers-v4.min.js"
+        type="text/javascript">
+        </script>
+        <script src="./index.js"></script>
+</body>
+</html>
